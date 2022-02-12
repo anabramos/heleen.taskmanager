@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
         type="text/css">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
+    <script src="https://kit.fontawesome.com/b690598c3f.js" crossorigin="anonymous"></script>
+
     <title>Heleen's Task Manager</title>
 </head>
 
@@ -20,7 +22,7 @@
         <!-- top navbar -->
         <nav class="green darken-1">
             <div class="nav-wrapper">
-            <a href="{{ url_for('home') }}" class="brand-logo">Heleen's Task Manager</a>
+            <a href="{{ url_for('home') }}" class="brand-logo">Heleen's Task Manager <i class="fa fa-solid fa-check-double"></i></a>
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
             <ul class="right hide-on-med-and-down">
                 <li><a href="{{ url_for('home') }}">Home</a></li>
@@ -43,10 +45,9 @@
         {% endblock %}
     </main>
 
-    <footer class="page-footer green darken-3">
+    <footer class="page-footer green darken-1">
         <div class="footer-copyright">
             <div class="container">
-                Ana is a good friend.
                 <a class="white-text right" href="https://codeinstitute.net" target="_blank">&copy; Ana made me this</a>
             </div>
         </div>
